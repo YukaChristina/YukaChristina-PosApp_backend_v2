@@ -1,5 +1,12 @@
 fastapi==0.115.0
 uvicorn[standard]==0.30.6
+gunicorn==21.2.0
+
 SQLAlchemy==2.0.35
 PyMySQL==1.1.1
 python-dotenv==1.0.1
+
+# 補助パッケージ（必要に応じて）
+pydantic==2.9.2
+jinja2==3.1.4
+
