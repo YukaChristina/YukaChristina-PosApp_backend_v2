@@ -1,0 +1,26 @@
+# Python / FastAPI
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+.mypy_cache/
+.pytest_cache/
+.coverage
+.vscode
+*.log
+
+# Env / Secrets
+.env
+.env.*
+*.env
+
+# IDE / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# SSL certificate
+certs/
