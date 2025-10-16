@@ -36,8 +36,6 @@ app = FastAPI(
 )
 app.include_router(purchase_router)
 
-from backend.api.purchase import router as purchase_router
-
 # CORS設定（Next.jsのフロントエンドから呼び出せるようにする）
 app.add_middleware(
     CORSMiddleware,
