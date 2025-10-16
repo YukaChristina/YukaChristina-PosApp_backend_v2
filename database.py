@@ -29,9 +29,7 @@ engine = create_engine(
     pool_pre_ping=True,
     echo=False,  # 必要なら True にしてSQLログを見る
     connect_args={
-        "ssl": {
-            "ssl":{"ca":ssl_cert} 
-        }
+        "ssl": {"ca":ssl_cert} 
     },
     future = True,
 )

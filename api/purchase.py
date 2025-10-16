@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from decimal import Decimal
 import logging
 
-from ..database import get_db
-from ..models import Product, Transaction, TransactionDetail
-from ..schemas import PurchaseIn as PurchaseRequest, PurchaseOut as PurchaseResponse
+from database import get_db
+from models import Product, Transaction, TransactionDetail
+from schemas import PurchaseIn as PurchaseRequest, PurchaseOut as PurchaseResponse
 
 router = APIRouter(prefix="", tags=["purchase"])
 logger = logging.getLogger(__name__)

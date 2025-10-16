@@ -6,12 +6,12 @@ from fastapi.responses import JSONResponse
 import json
 from sqlalchemy.orm import Session
 from sqlalchemy import text  # ← 後で生SQLを使うので追加
-from .database import get_db
-from .models import Product
-from .schemas import ProductOut, PurchaseIn, PurchaseOut
+from database import get_db
+from models import Product
+from schemas import ProductOut, PurchaseIn, PurchaseOut
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from .database import engine  # 既存のengineを利用
+from database import engine  # 既存のengineを利用
 import logging
 
 logger = logging.getLogger("uvicorn.error")  # ターミナルに出るuvicornのログ
