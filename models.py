@@ -1,6 +1,6 @@
 # backend/models.py
 from sqlalchemy import Column, Integer, String, ForeignKey, Numeric
-from .database import Base  # 同階層なら from .database ではなく相対不要（実行の仕方によりどちらでもOK）
+from database import Base  # 同階層なら from .database ではなく相対不要（実行の仕方によりどちらでもOK）
 from sqlalchemy.orm import relationship
 
 class Product(Base):

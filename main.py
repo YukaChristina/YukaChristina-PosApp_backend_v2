@@ -1,4 +1,4 @@
-from backend.api.purchase import router as purchase_router
+from api.purchase import router as purchase_router
 import traceback
 from fastapi import FastAPI, Depends, HTTPException, Body, Request
 from sqlalchemy.exc import SQLAlchemyError
