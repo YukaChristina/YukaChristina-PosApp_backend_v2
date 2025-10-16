@@ -26,7 +26,7 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error("❌ DB connectivity FAILED (startup): %s", e, exc_info=True)
     yield
-    # --- アプリ終了時（必要ならリソース解放をここに） ---
+    # --- アプリ終了時（必要ならリソース解放をここに入れる） ---
 
 # ★ app はここで1回だけ作る（他の場所で再代入しない！）
 app = FastAPI(
